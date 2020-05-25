@@ -40,17 +40,18 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <div className='App-input'>
-            <h1>To Do List</h1>
-            <input value={this.state.text} onChange={this.onChange}></input>
-            <button onClick={this.handleClick}>{this.state.isClicked}Add</button>
-          <div className="App-list">
-            {this.state.todos.map((todo, index) => (
-              <div key={index}>
-                {todo}
-                <button onClick={this.handleDelete(index)}>Delete</button>
-              </div>
-          ))}
-          </div>
+            <h1>All Tasks</h1>
+            <div className="App-list">
+              {this.state.todos.map((todo, index) => (
+                <div key={index}>
+                  <div className="todos">{todo}
+                    <button onClick={this.handleDelete(index)}>Delete</button>
+                  </div>
+                </div>
+              ))}
+            </div>
+              <input value={this.state.text} onChange={this.onChange}></input>
+              <button onClick={this.handleClick}>{this.state.isClicked}Add</button>
           </div>
         </header>
       </div>

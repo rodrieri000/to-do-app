@@ -30,7 +30,11 @@
   border: 10px solid #61dafb;
   padding: 40px;
   font-size: 20px;
-  border-radius: 5px;
+  border-radius: 5px;  
+}
+
+.App-input h1 {
+  margin: 0;
 }
 
 .App-input input {
@@ -38,6 +42,7 @@
   border-radius: 5px;
   padding: 10px;
   font-size: 14px;
+  margin-top: 35px;
 }
 
 .App-input button {
@@ -53,15 +58,28 @@
   height: 300px;
   border: 2px solid white;
   border-radius: 5px;
-  padding: 20px;
+  padding: 25px;
   font-size: 25px;
   margin-top: 15px;
   justify-items: left;
+  background-color: white;
+}
+
+.todos {
+  color: #454950;
+  padding: 5px;
+  text-align: left;
+}
+
+.todos button {
+  margin-top: 2px;
+  font-weight: 200;
 }
 
 .App-list button {
   padding: 3px;
   font-weight: 500;
+  float: right;
 }
 
 .App-link {
